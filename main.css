@@ -158,6 +158,8 @@ body{
 	font-size: 4vw;
 	font-weight: bold;
 	color: #4658ba;
+	animation-duration: 1s;
+	animation-name: bounceinReverseX;
 }
 .article-1 > .text {
 	width: 65%;
@@ -169,6 +171,8 @@ body{
 	font-size: 1.5vw;
 	font-weight: bold;
 	font-family: 'Roboto Condensed', sans-serif;
+	animation-duration: 1s;
+	animation-name: bounceinX;
 }
 .article-1 > hr {
 	width:70%;
@@ -183,6 +187,8 @@ body{
 }
 .article-1 > .body > img{
 	max-width: 100%;
+	animation-duration: 1s;
+	animation-name: bounceinX2;
 }
 .article-1 > .body > .text{
 	display: table-cell;
@@ -193,6 +199,8 @@ body{
 	font-size: 1.05vw;
 	text-align: left;
 	font-family: 'Roboto Condensed', sans-serif;
+	animation-duration: 1s;
+	animation-name: bounceinReverseX2;
 }
 .article-1 > .body > .text > h1{
 	margin-top:0;
@@ -247,6 +255,8 @@ body{
 	font-size: 1.5vw;
 	font-weight: bold;
 	font-family: 'Roboto Condensed', sans-serif;
+	animation-duration: 1s;
+	animation-name: fadein;
 }
 .article-2 > .body {
 	position: relative;
@@ -261,6 +271,8 @@ body{
 }
 .article-2 > .body > .column {
 	padding-bottom: 2vw;
+	animation-duration: 1s;
+	animation-name: fadein;
 }
 .article-2 > .body > .column > .cap{
 	width:80%;
@@ -358,6 +370,7 @@ body{
 	font-size: 1.2vw;
 	font-family: 'Roboto Condensed', sans-serif;
 	vertical-align: middle;
+	animation-duration: 1s;
 }
 .article-3 > .body > .row > a > img{
 	border-radius: 100%;
