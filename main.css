@@ -52,14 +52,13 @@ body{
 	/*	filter: grayscale(80%);*/
 }
 .container-4{
-	height: 23vw;
+	height: 35vw;
 	width: 100%;
 	background-image: url(16825961_1896573787293544_6514272689634808293_o.jpg); 
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: center;
+    background-position: center bottom;
 	opacity: .8;
-	/*	filter: grayscale(80%);*/
 }
 .wrap {
 	height: 100%;
