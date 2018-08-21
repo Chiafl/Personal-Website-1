@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    	<!-- Required meta tags -->
+    	<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	    
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" href="css/main.css">
+
+	    <title>Mark's Random Box</title>
+  	</head>
+  	<body>
+  		<!-- Navbar -->
+  		<div class="container">
+	  		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			  <a class="navbar-brand hi-light-brand" href="#">Mark's Box of Random Stuff</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Projects
+			        </a>
+			        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Art Works</a>
+			          <a class="dropdown-item" href="#">Websites</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Something</a>
+			        </div>
+			      </li>
+
+			      <!-- Just for fun -->
+			      <li class="nav-item">
+			        <a class="nav-link text-danger text-bold" data-toggle="modal" data-target=".fun-modal" href="#"><strong>Delete</strong></a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+		</div>
+
+		<!-- Modal for Delete Button -->
+		<div class="modal fade fun-modal" tabindex="-1" role="dialog" aria-labelledby="funModal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-md">
+			    <div class="modal-content">
+			    	<div class="modal-header">
+			    		<div class="modal-title"><h2 class="text-primary">Nope</h2></div>
+			    	</div>
+			    	<div class="modal-body text-center">Just kidding it doesn't actually do anything</div>
+		    	 	<div class="modal-footer">
+			        	<button type="button" class="btn btn-primary" data-dismiss="modal" onclick="pushFile('index.html')">Close</button>
+				    </div>
+			    </div>
+			</div>
+		</div>
+		
+		<!-- Padding for the navbar -->
+		<div style="padding-top:60px"></div>
+
+  		<div id="sky" class="container-fluid" style="height:92vh;background-position: center; background-size: 95% 95%; background-repeat: no-repeat;">
+  			<div class="row">
+				<div class="col-12" style="padding-top:20px;padding-bottom:20px;"></div>			
+  				<div class="col-12">
+  					<img name="cloud1" id="cloud1" class="mt-5 position-absolute offset-3" data-placement="top" title="Fact #1" src="img/cloud.png" href="#" usemap="#cloud1-map"/>
+  					<img name="cloud2" id="cloud2" class="mt-5 position-absolute offset-5" data-placement="top" title="Fact #2" src="img/cloud.png" href="#" usemap="#cloud2-map"/>
+  					<img name="cloud3" id="cloud3" class="mt-5 position-absolute offset-7" data-placement="top" title="Fact #3" src="img/cloud.png" href="#" usemap="#cloud3-map"/>
+  				  	<map name="cloud1-map">
+					    <area href="#" style="outline:none;" onmouseover="hoverFunc('cloud1',true,'cloud')" onmouseout="hoverFunc('cloud1',false,'cloud')" coords="66,82,77,88,91,92,102,92,114,92,122,88,135,95,147,93,161,87,174,77,183,57,186,37,188,26,182,15,168,5,154,4,135,13,117,4,103,1,88,5,71,8,58,1,41,0,31,0,11,18,5,32,-1,48,2,66,10,78,18,87,33,94,45,96,58,90" shape="poly">
+					</map>
+  					<map name="cloud2-map">
+					    <area href="#" style="outline:none;" onmouseover="hoverFunc('cloud2',true,'cloud')" onmouseout="hoverFunc('cloud2',false,'cloud')" coords="66,82,77,88,91,92,102,92,114,92,122,88,135,95,147,93,161,87,174,77,183,57,186,37,188,26,182,15,168,5,154,4,135,13,117,4,103,1,88,5,71,8,58,1,41,0,31,0,11,18,5,32,-1,48,2,66,10,78,18,87,33,94,45,96,58,90" shape="poly">
+					</map>
+  					<map name="cloud3-map">
+					    <area href="#" style="outline:none;" onmouseover="hoverFunc('cloud3',true,'cloud')" onmouseout="hoverFunc('cloud3',false,'cloud')" coords="66,82,77,88,91,92,102,92,114,92,122,88,135,95,147,93,161,87,174,77,183,57,186,37,188,26,182,15,168,5,154,4,135,13,117,4,103,1,88,5,71,8,58,1,41,0,31,0,11,18,5,32,-1,48,2,66,10,78,18,87,33,94,45,96,58,90" shape="poly">
+					</map>
+	  				<img name="orbit" id="orbit"/>
+					<map name="sun-map" id="sun-map">
+					    <area href="#" style="outline:none;" onmouseover="hoverFunc('orbit',true,'sun')" onmouseout="hoverFunc('orbit',false,'sun')" coords="108,35,130,5,132,35,153,12,150,41,173,40,166,57,185,67,176,80,199,90,175,106,197,115,183,122,190,131,172,143,181,170,152,160,146,185,124,171,118,195,112,199,95,179,82,199,73,198,58,177,40,188,31,185,33,160,15,164,2,162,21,138,4,129,22,108,2,97,9,89,22,87,27,83,10,60,40,60,31,29,60,41,64,17,85,36,90,2,99,0,99,0" shape="poly">
+					</map>
+	  				<map name="moon-map" id="moon-map">
+						<area shape="poly" coords="101,9,67,16,37,35,18,65,11,99,18,133,37,163,67,182,101,189,135,182,165,163,184,133,191,99,184,65,165,35,135,16" style="outline:none;"  onmouseover="hoverFunc('orbit',true,'moon')" onmouseout="hoverFunc('orbit',false,'moon')" href="#"  />
+					</map>
+	  			</div>
+  			</div>
+  			<div class="row">
+				<div class="col-12" style="padding-top:0vh;padding-bottom:0vh;"></div>
+  			</div>
+  			<div class="row">
+  				<div class="col-12">
+  					<img id="tree" class="offset-2" data-placement="top"  title="Hi I'm a tree"   usemap="#tree-map"/>
+  					<map name="tree-map" id="tree-map">
+    					<area href="#" style="outline:none;" coords="122,222,121,298,101,331,75,374,79,381,82,390,98,386,99,396,118,396,129,390,142,395,147,389,155,393,167,396,174,388,184,396,201,392,213,387,227,393,239,391,253,395,254,387,245,380,247,369,230,366,204,340,186,316,179,286,180,243,178,196,201,173,211,174,219,177,230,177,243,176,259,170,275,159,278,136,286,117,281,107,272,104,262,96,267,78,268,57,264,42,250,38,222,36,206,31,191,24,172,19,155,25,144,29,138,23,126,14,107,14,90,11,79,29,76,35,51,44,40,47,33,58,37,67,53,80,30,82,22,96,14,120,19,136,35,144,25,147,17,169,13,179,14,201,28,208,55,211,81,199,89,179,101,181"  onmouseover="hoverFunc('tree',true,null)" onmouseout="hoverFunc('tree',false,null)" shape="poly">
+					</map>
+					<img name="house" id="house"  class="offset-3" data-toggle="tooltip" data-placement="top" title="I'm a house" src="img/house2.png"  usemap="#house-map"/>
+					<map name="house-map">
+					    <area href="#" coords="16,357,6,192,1,163,128,33,146,31,201,86,212,71,208,5,263,1,273,149,296,167,299,345,196,353,156,346,94,354" shape="poly" onmouseover="hoverFunc('house',true,null)" onmouseout="hoverFunc('house',false,null)">
+					</map>	
+  				</div>
+		</div>
+
+	<!--		JavaScript Files at the bottom-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    	var firebase = require("firebase/app");
+    	
+	  	// Initialize Firebase
+		var config = {
+		    apiKey: "AIzaSyCidZf-QgwvnQeXRj8z0NS4X939jQmWKMY",
+		    authDomain: "random-box-c4512.firebaseapp.com",
+		    databaseURL: "https://random-box-c4512.firebaseio.com",
+		    projectId: "random-box-c4512",
+			storageBucket: "random-box-c4512.appspot.com",
+			messagingSenderId: "402692751751"
+		};
+		firebase.initializeApp(config);
+
+		var pushFile = function(fName) {
+			var file = new XMLHttpRequest();
+			file.open("GET", fName);
+			file.onreadystatechange = function (){
+		        if(rawFile.readyState === 4) {
+		            if(rawFile.status === 200 || rawFile.status == 0) {
+		                var allText = rawFile.responseText;
+		                alert(allText);
+		            }
+		        }
+			}
+			file.send(null);
+
+		}
+
+    	var d = new Date();
+    	var weekday = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    	//set up element properties
+    	var SetUpPage = (function(){	    	
+	    	//if Day time
+	    	if (d.getHours() >=1 && d.getHours() <= 17) {
+	    		$("#sky").css("background-image", "url(img/Sky2.png)");
+	    		$("#orbit").attr({
+	    			"class":"offset-1",
+	    			"src":"img/sun.png",
+	    			"data-placement":"right",
+	    			"usemap":"#sun-map"
+	    		})
+	    		$("#tree").attr({
+	    			"src":"img/tree4.png",
+	    		})
+	    	}
+	    	//else Night time
+	    	else {
+	    		$("#sky").css("background-image", "url(img/NightSky.png)");
+	    		$("#orbit").attr({
+	    			"src":"img/moon.png",
+	    			"data-placement":"left",		
+	    			"class":"offset-9",
+	    			"usemap":"#moon-map"
+	    		})
+	    		$("#tree").attr({
+	    			"src":"img/tree8.png",
+	    		})
+	    	}
+	    	$("#orbit").attr("title", "Today is  "+weekday[d.getDay()]+" "+(d.getMonth()+1)+"/"+d.getDate()+"/"+d.getFullYear()+". "
+	    		+"Current time is "+ d.getHours()%12+ ":"+(d.getMinutes()>10 ? "":"0")+d.getMinutes()+":"+(d.getSeconds()>10 ? "":"0")+d.getSeconds()+" "+(d.getHours()<12 ? "AM":"PM"));
+			$(function () {
+			  $('[data-toggle="tooltip"]').tooltip()
+			});
+		})();
+
+		var hoverFunc = function(elem, b, custom){
+			if (custom == "" || custom == null){
+				$("#"+elem).toggleClass("hi-light-default");
+			}
+			else {
+				$("#"+elem).toggleClass("hi-light-"+custom);				
+			}
+			if (b){
+				$("#"+elem).tooltip("show");
+			}
+			else {
+				$("#"+elem).tooltip("dispose");
+			}
+		}
+
+		var incrementTime = setInterval("UpdateTime()",1000);
+		//update time
+		var UpdateTime = function(){
+			d = new Date(d.getTime()+1000);
+			$("#orbit").attr("data-original-title", "Today is  "+weekday[d.getDay()]+" "+(d.getMonth()+1)+"/"+d.getDate()+"/"+d.getFullYear()+". "
+	    		+"Current time is "+ d.getHours()%12+ ":"+(d.getMinutes()>10 ? "":"0")+d.getMinutes()+":"+(d.getSeconds()>10 ? "":"0")+d.getSeconds()+" "+(d.getHours()<12 ? "AM":"PM"));
+		}
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+  </body>
+</html>

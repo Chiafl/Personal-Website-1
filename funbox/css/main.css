@@ -1,0 +1,36 @@
+.hi-light{
+	transition-duration: .2s;
+}
+.hi-light-brand:hover {
+	color: white !important;
+    text-shadow: 0px 0px 5px black;
+    transform: scale(1.05,1.05);
+}
+.hi-light-default {
+    -webkit-filter: drop-shadow(1px 1px 0  black)
+                  drop-shadow(-1px -1px 0  black);
+    filter: drop-shadow(1px 1px 0px black) 
+          drop-shadow(-1px -1px 0px black);
+}
+.hi-light-cloud {
+  -webkit-filter: drop-shadow(.5px .5px 0  #6F7475)
+                  drop-shadow(-.5px -.5px 0  #6F7475);
+  filter: drop-shadow(.5px .5px 0px #CEE1F0) 
+          drop-shadow(-.5px -.5px 0px #CEE1F0);
+}
+.hi-light-sun {
+  -webkit-filter: drop-shadow(.5px .5px 0  #554500)
+                  drop-shadow(-.5px -.5px 0  #554500);
+  filter: drop-shadow(.5px .5px 0px #554500) 
+          drop-shadow(-.5px -.5px 0px #554500);
+}
+.hi-light-moon {
+  -webkit-filter: drop-shadow(1px 1px 0  #806C15)
+                  drop-shadow(-1px -1px 0  #806C15);
+  filter: drop-shadow(1px 1px 2px #806C15) 
+          drop-shadow(-1px -1px 2px #806C15);
+}
+/*#sky > * > a:active,a:focus{
+	outline: 0;
+	border: none;
+}*/
