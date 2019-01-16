@@ -11,7 +11,7 @@
 	    <!-- Custom CSS -->
 	    <link rel="stylesheet" href="css/main.css">
 
-	    <title>Mark's Random Box</title>
+	    <title>FunBox</title>
   	</head>
   	<body>
   		<!-- Navbar -->
@@ -22,7 +22,7 @@
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent" disabled>
 			    <ul class="navbar-nav ml-auto">
 			      <li class="nav-item active">
 			        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -53,9 +53,18 @@
 			<div class="modal-dialog modal-dialog-centered modal-md">
 			    <div class="modal-content">
 			    	<div class="modal-header">
-			    		<div class="modal-title"><h2 class="text-primary">Nope</h2></div>
+			    		<div class="modal-title"><h2 class="text-danger">Deleting</h2></div>
 			    	</div>
-			    	<div class="modal-body text-center">Just kidding it doesn't actually do anything</div>
+			    	<div class="modal-body text-center">
+							<label class="">Please enter the password</label><br>
+							<div class="text-center needs-validation" novalidate>
+								<div class="form-inline" >
+									<input type="password" class="form-control ml-5 col-7" id="deletePassword" 	placeholder="Password" required>
+									<button type="destroy" class="btn btn-danger" onclick="destroy()">Destory</button>
+								</div>
+								<div class="invalid-tooltip text-danger">Incorrect Password</div>
+							</div>
+						</div>
 		    	 	<div class="modal-footer">
 			        	<button type="button" class="btn btn-primary" data-dismiss="modal" onclick="pushFile('index.html')">Close</button>
 				    </div>
@@ -113,33 +122,33 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
-    	var firebase = require("firebase/app");
-    	
-	  	// Initialize Firebase
-		var config = {
-		    apiKey: "AIzaSyCidZf-QgwvnQeXRj8z0NS4X939jQmWKMY",
-		    authDomain: "random-box-c4512.firebaseapp.com",
-		    databaseURL: "https://random-box-c4512.firebaseio.com",
-		    projectId: "random-box-c4512",
-			storageBucket: "random-box-c4512.appspot.com",
-			messagingSenderId: "402692751751"
-		};
-		firebase.initializeApp(config);
-
-		var pushFile = function(fName) {
-			var file = new XMLHttpRequest();
-			file.open("GET", fName);
-			file.onreadystatechange = function (){
-		        if(rawFile.readyState === 4) {
-		            if(rawFile.status === 200 || rawFile.status == 0) {
-		                var allText = rawFile.responseText;
-		                alert(allText);
-		            }
-		        }
-			}
-			file.send(null);
-
-		}
+//    	var firebase = require("firebase/app");
+//    	
+//	  	// Initialize Firebase
+//		var config = {
+//		    apiKey: "AIzaSyCidZf-QgwvnQeXRj8z0NS4X939jQmWKMY",
+//		    authDomain: "random-box-c4512.firebaseapp.com",
+//		    databaseURL: "https://random-box-c4512.firebaseio.com",
+//		    projectId: "random-box-c4512",
+//			storageBucket: "random-box-c4512.appspot.com",
+//			messagingSenderId: "402692751751"
+//		};
+//		firebase.initializeApp(config);
+//
+//		var pushFile = function(fName) {
+//			var file = new XMLHttpRequest();
+//			file.open("GET", fName);
+//			file.onreadystatechange = function (){
+//		        if(rawFile.readyState === 4) {
+//		            if(rawFile.status === 200 || rawFile.status == 0) {
+//		                var allText = rawFile.responseText;
+//		                alert(allText);
+//		            }
+//		        }
+//			}
+//			file.send(null);
+//
+//		}
 
     	var d = new Date();
     	var weekday = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -200,6 +209,15 @@
 			d = new Date(d.getTime()+1000);
 			$("#orbit").attr("data-original-title", "Today is  "+weekday[d.getDay()]+" "+(d.getMonth()+1)+"/"+d.getDate()+"/"+d.getFullYear()+". "
 	    		+"Current time is "+ d.getHours()%12+ ":"+(d.getMinutes()>10 ? "":"0")+d.getMinutes()+":"+(d.getSeconds()>10 ? "":"0")+d.getSeconds()+" "+(d.getHours()<12 ? "AM":"PM"));
+		}
+		
+		var password = "idontknowthepassword"
+		
+		var destroy = function(){
+//			var x = document.getElementById("passwordDelete");
+//			if (x.value==password){
+				
+//			}
 		}
 	</script>
 	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
